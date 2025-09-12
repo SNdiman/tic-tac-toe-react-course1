@@ -11,4 +11,20 @@ export const CellStyle= styled.button`
     height: 10rem;
     box-shadow: 5px 15px #888888;
     cursor: pointer;
+    padding: 3rem;
+
+    .iconX{
+        height: 3rem;
+        width: 3rem;
+        fill: ${(props) => props.theme.colors.text};
+    }
+
+    .iconY{
+        height: 3rem;
+        width: 3rem;
+        fill: ${(props) => props.theme.colors.text};
+    }
+
+
+    
 `
