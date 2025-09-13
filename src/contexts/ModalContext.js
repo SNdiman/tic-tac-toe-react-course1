@@ -1,16 +1,16 @@
-//"light" === light mode , "dark" ===darkmode
 import { useState, createContext } from "react";
 import { useModal } from "../hooks/useModal";
+import ModalTemplate from "../components/Modal/ModalTemplate";
 
-export const ModalContext = createContext({
-     
-});
+export const ModalContext = createContext({});
 
 export function ModalContextProvider({ children }) {
-  const {modal, modalContent, handleModal} = useModal("light");
-
+  const { modal, modalContent, handleModal } = useModal("light");
 
   return (
-    <ModalContext.Provider value={{modal, modalContent, handleModal}}>{children}</ModalContext.Provider>
+    <ModalContext.Provider value={{ modal, modalContent, handleModal }}>
+      <ModalTemplate/>
+      {children}
+    </ModalContext.Provider>
   );
 }
