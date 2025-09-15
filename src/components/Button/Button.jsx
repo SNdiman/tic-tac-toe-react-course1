@@ -3,8 +3,9 @@ import { ButtonWrapper } from './Button.styled'
 // import { useNavigate } from 'react-router-dom'
 
 function Button(props) {
+  
   return (
-    <ButtonWrapper >
+    <ButtonWrapper {...props}>
       {props.children}
     </ButtonWrapper>
   )

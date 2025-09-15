@@ -6,7 +6,9 @@ import { ModalContextProvider } from "./ModalContext";
 function Provider({ children }) {
   return (
     <ThemeContextProvider>
-      <GameContextProvider><ModalContextProvider>{children}</ModalContextProvider></GameContextProvider>
+      <GameContextProvider>
+        {children}
+      </GameContextProvider>
     </ThemeContextProvider>
   );
 }

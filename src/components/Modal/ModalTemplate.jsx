@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
+import { ModalBackdrop, ModalContainer } from "./Modal.styled";
 import { ModalContext } from "../../contexts/ModalContext";
 
 function ModalTemplate() {
@@ -7,8 +8,8 @@ function ModalTemplate() {
 
   if (modal) {
     return ReactDOM.createPortal(
-      <div>{modalContent}</div>,
-      document.getElementById("root")
+      <ModalBackdrop><ModalContainer>{modalContent}</ModalContainer></ModalBackdrop>,
+      document.getElementById("modal-root")
     );
   }
   return null;

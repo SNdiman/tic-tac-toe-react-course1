@@ -3,14 +3,16 @@ import React from "react";
 import { Container, Title,Subtitle } from "../../styles/General.styled";
 // import Header from "../../components/Header/Header";
 import Button from "../../components/Button/Button";
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+  const navigate =useNavigate();
   return (
-    <Container>
+    <Container columnBased>
       
       <Title>TicTacToe</Title>
       <Subtitle>Lets Play, higher score wins</Subtitle>
-      <Button>Play Now</Button>
+      <Button onClick={() => navigate("game-on")}>Play Now</Button>
 
     </Container>
   );
