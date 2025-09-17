@@ -6,5 +6,6 @@ export const PlayerWrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin: 10rem;
+    background-color: ${({isPlayerActive}) => isPlayerActive ? "yellow" : "grey"};
 
 `

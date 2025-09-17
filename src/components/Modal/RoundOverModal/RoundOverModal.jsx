@@ -13,10 +13,10 @@ function RoundOverModal() {
   return (
     <div>
       <ModalHeader>
-        <Title primary>{game.player1.choice === game.turn ? game.player1.name : game.player2.name} wins this round</Title>
+        <Title primary>{game.roundWinner.name ? `${game.roundWinner.game} wins the round` : "Draw"} </Title>
       </ModalHeader>
       <ModalBody>
-        <Subtitle primary>Sbu won this round! Choices will be switched</Subtitle>
+        <Subtitle primary>Choices will be switched</Subtitle>
         <Subtitle primary>{game.player1.name}: {game.player1.score}</Subtitle>
         <Subtitle primary>{game.player2.name}: {game.player2.score}</Subtitle>
       </ModalBody>
