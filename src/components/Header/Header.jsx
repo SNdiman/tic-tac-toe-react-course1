@@ -10,7 +10,7 @@ function Header() {
     const navigate = useNavigate();
   return (
     <HeaderWrapper>
-      <Logo className="logo" onClick={() => navigate("/")}/>
+      <Logo className="logo" onClick={() => navigate("/")} cursor="pointer"/>
       <span onClick={() => toggleTheme()}>
         {theme ==="light" ? <LightModeIcon/> : <DarkModeIcon/>}
       </span>

@@ -1,13 +1,22 @@
 import React from "react";
-import { PlayerWrapper } from "./Player.styled";
+import { PlayerWrapper, AvatarWrapper } from "./Player.styled";
+import Avatar, { genConfig } from "react-nice-avatar";
+import { Text, Subtitle } from "../../styles/General.styled";
 
 function Player({ player, isPlayerActive }) {
+
+  // const config = genConfig();  
   return (
     <PlayerWrapper isPlayerActive={isPlayerActive ?? false}>
-      <div>
-        {player.name} ({player.choice})
-      </div>
-      <div>{player.score}</div> 
+      <AvatarWrapper>
+        <Avatar style={{ width: '8rem', height: '8rem' }} {...player.avatarConfig} />
+
+      </AvatarWrapper>
+      
+      <Subtitle>
+        {player.name} ({player.choice.toUpperCase()})
+      </Subtitle>
+      <Subtitle size="4rem">{player.score}</Subtitle> 
     </PlayerWrapper>
   );
 }
