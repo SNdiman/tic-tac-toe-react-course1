@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Title, Subtitle } from "../../../styles/General.styled";
 import { ModalHeader, ModalBody, ModalFooter } from "../Modal.styled";
-import ModalTemplate from "../../Modal/ModalTemplate";
+// import ModalTemplate from "../../Modal/ModalTemplate";
 import Button from "../../Button/Button";
 import { GameContext } from "../../../contexts/GameContext";
 import { ModalContext } from "../../../contexts/ModalContext";

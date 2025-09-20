@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import Avatar, { genConfig } from "react-nice-avatar";
+import { genConfig } from "react-nice-avatar";
 
 export const GameContext = createContext({});
 

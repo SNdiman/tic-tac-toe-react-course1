@@ -1,5 +1,5 @@
 //"light" === light mode , "dark" ===darkmode
-import { useState, createContext } from "react";
+import { createContext } from "react";
 import useSound from "../hooks/useSound";
 
 export const SfxContext = createContext({});

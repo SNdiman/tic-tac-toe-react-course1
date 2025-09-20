@@ -1,7 +1,7 @@
 import React from "react";
 import { PlayerWrapper, AvatarWrapper } from "./Player.styled";
-import Avatar, { genConfig } from "react-nice-avatar";
-import { Text, Subtitle } from "../../styles/General.styled";
+import Avatar from "react-nice-avatar";
+import { Subtitle } from "../../styles/General.styled";
 
 function Player({ player, isPlayerActive }) {
 
