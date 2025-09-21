@@ -19,7 +19,7 @@ export const Container = styled.div`
 `;
 export const Title = styled.h1`
   color: ${(props) =>
-    props.primary ? props.theme.colors.secondary : props.theme.colors.text};
+    props.primary ? props.theme.colors.primary : props.theme.colors.secondary};
   font-size: 3rem;
   font-family: "Courier New", Courier, monospace;
   background-color: transparent;
@@ -32,7 +32,7 @@ export const Title = styled.h1`
 // props.isDarkMode ? "white" : "black"
 export const Subtitle = styled.h1`
   color: ${(props) =>
-    props.primary ? props.theme.colors.secondary : props.theme.colors.text};
+    props.primary ? props.theme.colors.primary : props.theme.colors.secondary};
   font-size: 1.5rem;
   font-weight: 200;
   background-color: transparent;

@@ -20,7 +20,7 @@ function RoundOverModal() {
         <Title primary>
           {game.roundWinner.name
             ? `${game.roundWinner.game} wins the round`
-            : "Draw"}{" "}
+            : "Draw"}
         </Title>
       </ModalHeader>
       <ModalBody>
